@@ -6,3 +6,33 @@
   --color-blue: #0094ff;
   --color-light-blue: #00a0e9;
 }
+
+body {
+  margin: 0;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+.main-visual {
+  width: 100%;
+}
+
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none
+}
+
+@media screen and (max-width: 600px) {
+  .pc {
+    display: none
+  }
+
+  .sp {
+    display: block
+  }
+}
