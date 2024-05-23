@@ -1,38 +1,217 @@
 /* colors */
-
 :root {
-  --color-background: #003f4d;
-  --color-orange: #ff7a00;
-  --color-blue: #0094ff;
-  --color-light-blue: #00a0e9;
+    --color-background: #009ebd;
+    --color-orange: #ff7a00;
+    --color-blue: #0094ff;
+    --color-light-blue: #00a0e9;
 }
 
 body {
-  margin: 0;
+    margin: 0;
+    background-color: var(--color-background);
 }
 
 #wrapper {
-  width: 100%;
+    width: 100%;
+    position: relative;
 }
 
 .main-visual {
-  width: 100%;
+    width: 100%;
+    transition: transform 0.1s ease-out; 
 }
 
+
+
 .pc {
-  display: block;
+    display: block;
 }
 
 .sp {
-  display: none
+    display: none;
 }
 
-@media screen and (max-width: 600px) {
-  .pc {
-    display: none
-  }
 
-  .sp {
-    display: block
-  }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
+
+
+
+#Title-image {
+    position: absolute;
+    top: 2.4%;
+    left: 2.4%;
+    width: 38%;
+    z-index: 10;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+#balloon2 {
+    position: absolute; 
+    top: 14.5%; 
+    right: 14.5%; 
+    width: 28.5%; 
+    z-index: 20; 
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards; 
+}
+
+
+#coming {
+    position: absolute;
+    top: 46%;
+    right: 3%;
+    width: 28.5%;
+    z-index: 20;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+#balloon {
+    position: absolute;
+    transform: translate(-50%, -40%);
+    left: 12%;
+    top: 70%;
+    width: 5%;
+    z-index: 20;
+}
+
+#teaser {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 30%;
+    top: 70%;
+    width: 28.5%;
+    z-index: 20;
+}
+
+#name-image {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 3%;
+    width: 20%;
+    z-index: 20;
+}
+
+.sns {
+    position: absolute;
+    bottom: 3%;
+}
+
+.instagram {
+    right: 14%;
+    width: 2.8%;
+    z-index: 20;
+}
+
+.X {
+    right: 9%;
+    width: 2.8%;
+    z-index: 20;
+}
+.youtube {
+    right: 3%;
+    width: 3.5%;
+    z-index: 20;
+}
+
+.sns:hover {
+    opacity: 0.7; 
+    transition: opacity 0.3s ease; 
+}
+
+.youtube-video {
+    position: absolute;
+    top: 139%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    z-index: 30;
+}
+
+@media screen and (max-width: 700px) {
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+
+    #Title-image {
+        width: 64%;
+        top: 40.5%;
+
+    }
+
+    #balloon2 {
+        width: 40%;
+        left: 48%;
+        top: 5%;
+    }
+
+    #balloon {
+        left: 20%;
+        top: 67%;
+        width: 8%;
+    }
+
+    #teaser {
+        left: 54%;
+        top: 67%;
+        width: 55%;
+    }
+
+    .youtube-video {
+        top: 120%;
+        left: 50%;
+        width: 80%;
+    }
+
+    #coming {
+        top: 96%;
+        right: 68%;
+        width: 30%;
+    }
+
+    .instagram {
+        position: absolute;
+        bottom: 3%;
+        right: 22%;
+        width: 5%;
+    }
+
+    .X {
+        position: absolute;
+        bottom: 3%;
+        right: 13%;
+        width: 5%;
+    }
+
+    .youtube {
+        position: absolute;
+        bottom: 3%;
+        right: 3%;
+        width: 6%;
+    }
+
+        #name-image {
+        left: 82%;
+        bottom: 1.5%;
+        width: 30%;
+    }
+
+}
+
+
