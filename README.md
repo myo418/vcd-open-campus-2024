@@ -4,7 +4,7 @@
 
 ## URL
 
-以下のURLに公開されます。
+以下のURLに公開される予定です。
 
 https://vcd.musabi.ac.jp/opencampus/2024/
 
@@ -12,7 +12,7 @@ https://vcd.musabi.ac.jp/opencampus/2024/
 
 GitHub Pagesによって、mainブランチの内容が以下に公開されます。
 
-https://vcd.musabi.ac.jp/opencampus/2024/
+https://myo418.github.io/vcd-open-campus-2024/
 
 ## Design
 
