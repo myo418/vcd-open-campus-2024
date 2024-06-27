@@ -1,8 +1,17 @@
 /* colors */
 :root {
-  --color-background: #009ebd;
+  --color-background: rgb(0, 158, 189);
   --color-text: white;
-  --color-text-pale: #FAFAFA;
+  --color-text-pale: rgba(255, 255, 255, 0.8);
+  --color-text-dark: rgb(45, 85, 91);
+  --color-text-dark-pale: rgba(45, 85, 91, 0.7);
+  --color-border-light: lightgray;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
@@ -10,6 +19,7 @@ body {
   padding: 0;
   background-color: var(--color-background);
   color: var(--color-text);
+  position: relative;
 }
 
 .modal {
@@ -50,19 +60,43 @@ body {
 }
 
 h1 {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 h2 {
-    font-size: 32px;
-    margin-top: 0;
+  font-size: 32px;
+  margin-block-start: 80px;
+  margin-block-end: 30px;
+}
+
+a {
+  color: var(--color-text);
+}
+
+p {
+  text-indent: 1em;
 }
 
 .backToTop {
-    font-size: 24px;
-    text-decoration: none;
-    color: var(--color-text-pale);
-    position: relative;
-    left: 30px;
-    float: left;
+  font-size: 24px;
+  color: var(--color-text-pale);
+  position: absolute;
+  left: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-block-start: 50px;
+    margin-block-end: 15px;
+  }
+
+  .backToTop {
+    font-size: 16px;
+    left: 10px;
+  }
 }

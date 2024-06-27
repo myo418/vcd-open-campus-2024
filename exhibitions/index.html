@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <title>視覚伝達デザイン学科 オープンキャンパス2024</title>
+    <title>展示紹介 | 視覚伝達デザイン学科 オープンキャンパス2024</title>
     <meta
       name="title"
       content="展示紹介 | 視覚伝達デザイン学科 オープンキャンパス2024"
@@ -57,7 +57,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
@@ -73,13 +72,13 @@
     <div class="wrapper">
       <a href="/" class="backToTop topBackToTop">← 戻る</a>
       <h1 class="pageTitle">
-        <img src="/images/balloon.png" height="60px" class="pageTitleIcon" />展示紹介
+        <img src="/images/balloon.png" class="pageTitleIcon" />展示紹介
       </h1>
       <div class="yearSelector">
-        <a href="/exhibitions/?year=1" class="year left selected">1年</a>
-        <a href="/exhibitions/?year=2" class="year">2年</a>
-        <a href="/exhibitions/?year=3" class="year">3年</a>
-        <a href="/exhibitions/?year=4" class="year right">4年</a>
+        <a href="/exhibitions/?year=1" class="year year1Selector left">1年</a>
+        <a href="/exhibitions/?year=2" class="year year2Selector">2年</a>
+        <a href="/exhibitions/?year=3" class="year year3Selector">3年</a>
+        <a href="/exhibitions/?year=4" class="year year4Selector right">4年</a>
       </div>
       <div class="contentContainerWrapper">
         <div class="contentContainer">
@@ -118,11 +117,11 @@
             </div>
           </div>
           <div class="year1">
-            <h2 class="title">1年生の授業作品の展示</h2>
-            <div class="exhibitionContainer">
+            <h2>1年生の授業作品の展示</h2>
+            <div id="dialogWithLines" class="exhibitionContainer">
               <img src="/images/photos/line.jpg" class="exhibitionImage" />
               <div class="exhibitionText">
-                <p class="exhibitionTitle">線との対話</p>
+                <div class="exhibitionTitle">線との対話</div>
                 <p>
                   この授業は、墨によるドローイングを通して「線」について考える授業です。
                 </p>
@@ -136,11 +135,12 @@
             </div>
           </div>
           <div class="year2">
-            <h2 class="title">2年生の授業作品の展示</h2>
-            <div class="exhibitionContainer">
+            <h2>2年生の授業作品の展示</h2>
+            <div id="recipe" class="exhibitionContainer">
               <img src="/images/photos/recipe.jpg" class="exhibitionImage" />
               <div class="exhibitionText">
-                <p class="exhibitionTitle">レシピ</p>
+                <div class="exhibitionClassName">2年前期 構成演習</div>
+                <div class="exhibitionTitle">レシピ</div>
                 <p>
                   この授業では「料理」という共通のテーマから制作を行います。テーマに対する資料の収集、フィールドワーク、行為の記述を通して、デザインが成立するための動機の発見、調査、記録、表現、伝達といった基礎的な構造を学びます。
                 </p>
@@ -149,21 +149,589 @@
                 </p>
               </div>
             </div>
+            <div id="recipe" class="exhibitionContainer">
+              <img src="/images/photos/recipe.jpg" class="exhibitionImage" />
+              <div class="exhibitionText">
+                <div class="exhibitionClassName">2年後期 視覚表現演習A</div>
+                <div class="exhibitionTitle">知覚地図</div>
+                <p>
+                  環境に含まれる様々な情報を知覚し、行動や思考へと連鎖していく複合的な感覚世界を捉え直すことが授業のテーマです。
+                </p>
+                <p>
+                  言葉による記録、タグ付けやドローイングによる分析、情報構造の発見によって、目に見えない自身の知覚を観察対象とすることが可能になります。
+                  また知覚はそれ単独で自律しているわけではなく、周りの環境全てが少なからず影響を与えています。環境と知覚が連関する複雑な現象を[知覚地図]として視覚化します。
+                </p>
+              </div>
+            </div>
+            <div id="recipe" class="exhibitionContainer">
+              <img src="/images/photos/recipe.jpg" class="exhibitionImage" />
+              <div class="exhibitionText">
+                <div class="exhibitionClassName">2年後期 視覚表現演習B</div>
+                <div class="exhibitionTitle">動きと音</div>
+                <p>
+                  この授業では身の回りにある「動き」と「音」について、そして双方が影響し合う関係性について着目し、観察から編集を経て、動きと音によるイメージの生成を行います。
+                </p>
+                <p>
+                  「動き」のパートでは、動いているものの観察から始まり、記録、再現、創造を繰り返しながら複数の視点で動きを分析していきます。「音」のパートでは、日常に溢れている音に意識を向けて、自分が気になる映像と音の関係性の分析とその音に対する考えの共有から始まります。音がもたらす知覚への作用や、映像に寄り添う音のバランス、現実世界と映像世界との差分、受け手と時間軸の関係性などを発見し、「音」で「動き」の世界にインタラクションしていきます。
+                </p>
+              </div>
+            </div>
+            <div id="recipe" class="exhibitionContainer">
+              <img src="/images/photos/recipe.jpg" class="exhibitionImage" />
+              <div class="exhibitionText">
+                <div class="exhibitionClassName">2年後期 視覚表現演習C</div>
+                <div class="exhibitionTitle">トイデザイン</div>
+                <p>
+                  「あたらしいおもちゃを作る」ことをテーマとしてデザインプロセスの一連を学ぶことを目的とします。
+                </p>
+                <p>
+                  「あたらしい」ことと「おもちゃ」のそれぞれについて、またそれらの関係性について広くリサーチし、深く考え、クラス内で議論し、そこから自身の作品に
+                  展開します。デジタルやアナログの素材を利用しながらプロトタイプを作成し、アイデアをユーザー体験として具現化することで、自身の考えるあたらしいおもちゃをデザインします。そのコンセプト・デザインになった理由は何かという自身の思考プロセスを整理して説明できることが重視されます。
+                </p>
+              </div>
+            </div>
+            <div id="recipe" class="exhibitionContainer">
+              <img src="/images/photos/recipe.jpg" class="exhibitionImage" />
+              <div class="exhibitionText">
+                <div class="exhibitionClassName">2年後期 視覚表現演習D</div>
+                <div class="exhibitionTitle">植生</div>
+                <p>
+                  この授業では、まず、視覚による言語伝達に必須の文字組版の基礎を学びます。
+                </p>
+                <p>
+                  その上でデザインと編集の両方の視点を合わせた冊子を作成します。「武蔵野美術大学の植物/植生」をテーマとし、「ページ展開を伴う印刷物」を表現媒体として制作を行います。テーマ設定、対象へのアプローチ(観察、分析、発見、研究、執筆、編集)を踏まえた上で、構造設計(グリッドシステム)の作成・活用方法を学習し、組版とビジュアルの関係を視感覚によって制御するデザインを演習を通して学びます。
+                </p>
+              </div>
+            </div>
+            <div id="recipe" class="exhibitionContainer">
+              <img src="/images/photos/recipe.jpg" class="exhibitionImage" />
+              <div class="exhibitionText">
+                <div class="exhibitionClassName">2年後期 視覚表現演習E</div>
+                <div class="exhibitionTitle">物語</div>
+                <p>
+                  デザインを構成する基本的要素である言葉とイメージの関係を考察します。
+                </p>
+                <p>
+                  任意のテキストをモチーフにテキストの空間、時間、構造、意味、感情などを分析し、具体的なイメージに変換する試みです。与えられたA3見開きが連続する空間の中で言葉とイメージの相互作用が生み出す新たな意味、メッセージを生成する様々なスタディを行います。
+                </p>
+              </div>
+            </div>
+            <div id="recipe" class="exhibitionContainer">
+              <img src="/images/photos/recipe.jpg" class="exhibitionImage" />
+              <div class="exhibitionText">
+                <div class="exhibitionClassName">2年後期 視覚表現演習F</div>
+                <div class="exhibitionTitle">カラーアトラス</div>
+                <p>
+                  この授業は「カラーアトラス・色彩図鑑」を制作する授業です。
+                </p>
+                <p>
+                  色彩に関する実験的な制作から、色を見る楽しさと、色をコントロールする力を身につけ、作品へと発展させていきます。絵具によって色を作ることで色彩の効果を体験的に発見していく課題と、プログラムによる論理的な制作を通して、造形的な思考を深める課題を並行して行います。これらの課題を通して、様々なメディアを超えて必要となる、物を作るための身体的な技術と論理的な思考を養います。
+                </p>
+              </div>
+            </div>
+            <div id="recipe" class="exhibitionContainer">
+              <img src="/images/photos/recipe.jpg" class="exhibitionImage" />
+              <div class="exhibitionText">
+                <div class="exhibitionClassName">2年後期 空間構成Ⅱ</div>
+                <p>
+                  ミセルコト。デザインとして可視化するプロセスを理解することがこの授業の目的です。何をという発信者の視点、美しくという制作者の視点、魅せるという対象者の視点。3つの視点でアイデアを俯瞰しながら思考します。問いを把握し、フレキシブルに発想を広げ、面白い答えに収束させるコミュニケートのためのプロセスです。(飛山)
+                </p>
+                <p>
+                  行ったことのない /
+                  行くことのできない場所への想像を具現化したら、どの様に他者に伝わるでしょうか。平面から得られる視覚情報を立体に起こし、また平面に還元する制作を通して、非物質性と物質性、視覚と造形、それが空間に与える影響について考えます。(鈴木)
+                </p>
+              </div>
+            </div>
           </div>
           <div class="year3">
-            <h2 class="title">3年生の授業作品の展示</h2>
+            <h2>3年生の授業作品の展示</h2>
           </div>
           <div class="year4">
-            <h2 class="title">4年生の授業作品の展示</h2>
+            <h2>4年生の授業作品の展示</h2>
           </div>
-          <div class="year2"><h2 class="title">その他の2年生の授業</h2></div>
-          <div class="year3"><h2 class="title">その他の3年生の授業</h2></div>
-          <div class="year4"><h2 class="title">その他の4年生の授業</h2></div>
-          <h2 class="title">その他の展示</h2>
-          <div>展示場所を確認する</div>
-          <div>公開講評の時間を確認する</div>
+          <div class="year2"><h2>その他の2年生の授業</h2></div>
+          <div class="year3"><h2>その他の3年生の授業</h2></div>
+          <div class="year4"><h2>その他の4年生の授業</h2></div>
+          <h2>その他の展示</h2>
+        </div>
+      </div>
+      <div class="exhibitionSelectorContainer">
+        <div class="exhibitionSelectorContainerInside">
+          <div class="exhibitionSelectorContainerInsideLeft"></div>
+          <div class="exhibitionSelectorContainerInsideRight"></div>
+          <div class="exhibitionSelectorSlider">
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">1年 空間構成Ⅰ</div>
+                <div class="exhibitionLinkTitle">線との対話</div>
+              </div>
+            </a>
+            <a class="exhibitionLink" href="/exhibitions/?year=2#recipe">
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">2年前期 構成演習</div>
+                <div class="exhibitionLinkTitle">レシピ</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=2#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">2年後期 視覚表現演習A</div>
+                <div class="exhibitionLinkTitle">知覚地図</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=2#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">2年後期 視覚表現演習B</div>
+                <div class="exhibitionLinkTitle">動きと音</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=2#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">2年後期 視覚表現演習C</div>
+                <div class="exhibitionLinkTitle">トイデザイン</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=2#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">2年後期 視覚表現演習D</div>
+                <div class="exhibitionLinkTitle">植生</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=2#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">2年後期 視覚表現演習E</div>
+                <div class="exhibitionLinkTitle">物語</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=2#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">2年後期 視覚表現演習F</div>
+                <div class="exhibitionLinkTitle">カラーアトラス</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">2年後期</div>
+                <div class="exhibitionLinkTitle">空間構成I</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">3, 4年前期Ⅱ郡</div>
+                <div class="exhibitionLinkTitle">写真</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassNameSmall">3, 4年前期Ⅱ郡</div>
+                <div class="exhibitionLinkSmallTitle">
+                  <div>マーケティング</div>
+                  <div>コミュニケーション</div>
+                  <div>デザインⅠA</div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassNameSmall">3, 4年前期Ⅱ郡</div>
+                <div class="exhibitionLinkSmallTitle">
+                  <div>マーケティング</div>
+                  <div>コミュニケーション</div>
+                  <div>デザインⅠB</div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassNameSmall">3, 4年前期Ⅱ郡</div>
+                <div class="exhibitionLinkSmallTitle">
+                  <div>イラストレーション</div>
+                  <div>・フォーメディア</div>
+                  <div>三上クラス</div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassNameSmall">3, 4年前期Ⅱ郡</div>
+                <div class="exhibitionLinkSmallTitle">
+                  <div>イラストレーション</div>
+                  <div>・フォーメディア</div>
+                  <div>岩渕クラス</div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">3, 4年前期Ⅱ郡</div>
+                <div class="exhibitionLinkSmallTitle">
+                  ブックバインディングⅠ
+                </div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">3, 4年前期Ⅱ郡</div>
+                <div class="exhibitionLinkSmallTitle">
+                  <div>ヴィジブル</div>
+                  <div>ランゲージ演習</div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">3, 4年前期Ⅱ郡</div>
+                <div class="exhibitionLinkSmallTitle">
+                  <div>ユーザビリティと</div>
+                  <div>ユーザー</div>
+                  <div>エクスペリエンス</div>
+                  <div>デザイン</div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">3, 4年前期Ⅱ郡</div>
+                <div class="exhibitionLinkSmallTitle">
+                  <div>アイデンティティと</div>
+                  <div>ブランディング</div>
+                  <div>コミュニケーション</div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">3, 4年前期Ⅱ郡</div>
+                <div class="exhibitionLinkTitle">編集とデザイン</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">3, 4年前期Ⅱ郡</div>
+                <div class="exhibitionLinkTitle">モーションイメージ</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">3, 4年前期Ⅱ郡</div>
+                <div class="exhibitionLinkTitle">
+                  <div>タイプフェイス</div>
+                  <div>デザイン</div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">3, 4年前期Ⅱ郡</div>
+                <div class="exhibitionLinkSmallTitle">
+                  <div>モノガタリ考</div>
+                  <div>－視覚言語で語る－</div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">3, 4年前期Ⅱ郡</div>
+                <div class="exhibitionLinkSmallTitle">パッケージデザインⅡ</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">3, 4年前期Ⅱ郡</div>
+                <div class="exhibitionLinkTitle">音響表現
+                </div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">3年前期Ⅰ郡</div>
+                <div class="exhibitionLinkSmallTitle">
+                  <div>ライティング</div>
+                  <div>スペースデザイン</div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">3年前期Ⅰ郡</div>
+                <div class="exhibitionLinkSmallTitle">
+                  <div>空間構成Ⅲ</div>
+                  <div>環境デザイン</div>
+                </div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">3年前期Ⅰ郡</div>
+                <div class="exhibitionLinkSmallTitle">情報デザインA
+                </div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">3年前期Ⅰ郡</div>
+                <div class="exhibitionLinkSmallTitle">情報デザインB
+                </div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">1年 空間構成Ⅰ</div>
+                <div class="exhibitionLinkTitle">線との対話</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">2年前期 構成演習</div>
+                <div class="exhibitionLinkTitle">レシピ</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">2年後期 視覚表現演習A</div>
+                <div class="exhibitionLinkTitle">知覚地図</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">2年後期 視覚表現演習B</div>
+                <div class="exhibitionLinkTitle">動きと音</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">2年後期 視覚表現演習C</div>
+                <div class="exhibitionLinkTitle">トイデザイン</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">2年後期 視覚表現演習D</div>
+                <div class="exhibitionLinkTitle">植生</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">2年後期 視覚表現演習E</div>
+                <div class="exhibitionLinkTitle">物語</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=2#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">2年後期 視覚表現演習F</div>
+                <div class="exhibitionLinkTitle">カラーアトラス</div>
+              </div>
+            </a>
+            <a
+              class="exhibitionLink"
+              href="/exhibitions/?year=1#dialogWithLines"
+            >
+              <div class="exhibitionLinkBackground exhibitionLinkPhoto"></div>
+              <div class="exhibitionLinkBackground exhibitionLinkShade"></div>
+              <div class="exhibitionLinkText">
+                <div class="exhibitionLinkClassName">2年後期</div>
+                <div class="exhibitionLinkTitle">空間構成I</div>
+              </div>
+            </a>          </div>
+        </div>
+      </div>
+
+      <div class="contentContainerWrapper">
+        <div class="contentContainer">
+          <div class="linkBlock">
+            <div>
+              <a class="link" href="/map">
+                <img src="/images/map.png" width="30" class="linkIcon" />
+                展示場所を確認する
+              </a>
+            </div>
+          </div>
+          <div class="linkBlock">
+            <div>
+              <a class="link" href="/schedule">
+                <img src="/images/schedule.png" width="30" class="linkIcon" />
+                公開講評の時間を確認する
+              </a>
+            </div>
+          </div>
           <div class="logoWrapper">
-            <img src="/images/logo.png" height="30px" />
+            <img src="/images/logo.png" class="bottomLogo" />
           </div>
         </div>
       </div>
