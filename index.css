@@ -1,322 +1,259 @@
-/* colors */
-:root {
-    --color-background: #009ebd;
-    --color-orange: #ff7a00;
-    --color-blue: #0094ff;
-    --color-light-blue: #00a0e9;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-background);
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 40;
-}
-
-.modal-content {
-    position: relative;
-    width: 80%; /* Responsive width */
-    max-width: 900px;
-}
-
-.close-button {
-    color: #fff;
-    position: absolute;
-    top: 0px;
-    right: -40px;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-    .close-button:hover,
-    .close-button:focus {
-        color: #ccc;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
 .iframe-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
 }
 
 .modal-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
-
 @keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
+  from {
+    opacity: 1;
+  }
 
-    to {
-        opacity: 0;
-    }
+  to {
+    opacity: 0;
+  }
 }
 
 .modal-fade-out {
-    animation: fadeOut 0.8s forwards;
+  animation: fadeOut 0.8s forwards;
 }
 
-
 #wrapper {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
 
 .main-visual {
-    width: 100%;
-    transition: transform 0.1s ease-out; 
+  width: 100%;
+  transition: transform 0.1s ease-out;
 }
 
-
-
 .pc {
-    display: block;
+  display: block;
 }
 
 .sp {
-    display: none;
+  display: none;
 }
 
-
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 /* ?????????????? */
 .fade-in {
-    animation: fadeIn 2s ease-in-out forwards;
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
-
 #Title-image {
-    position: absolute;
-    top: 1%;
-    left: 2.4%;
-    width: 38%;
-    z-index: 10;
-    opacity: 0;
+  position: absolute;
+  top: 1%;
+  left: 2.4%;
+  width: 38%;
+  z-index: 10;
+  opacity: 0;
 }
 
 #concept {
-    position: absolute; 
-    top: 10%; 
-    right: 14.5%; 
-    width: 28.5%; 
-    z-index: 20; 
-    opacity: 0;
+  position: absolute;
+  top: 10%;
+  right: 14.5%;
+  width: 28.5%;
+  z-index: 20;
+  opacity: 0;
 }
 
-
 #coming {
-    position: absolute;
-    top: 30.5%;
-    right: 3%;
-    width: 28.5%;
-    z-index: 20;
-    opacity: 0;
+  position: absolute;
+  top: 30.5%;
+  right: 3%;
+  width: 28.5%;
+  z-index: 20;
+  opacity: 0;
 }
 
 #balloon {
-    position: absolute;
-    transform: translate(-50%, -40%);
-    left: 34%;
-    top: 45%;
-    width: 5%;
-    z-index: 20;
+  position: absolute;
+  transform: translate(-50%, -40%);
+  left: 34%;
+  top: 45%;
+  width: 5%;
+  z-index: 20;
 }
 
 #teaser {
-    position: absolute;
-    transform: translateX(-50%);
-    left: 52%;
-    top: 45%;
-    width: 28.5%;
-    z-index: 20;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 52%;
+  top: 45%;
+  width: 28.5%;
+  z-index: 20;
 }
 
 #name-image {
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50.5%;
-    bottom: 2%;
-    width: 20%;
-    z-index: 20;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50.5%;
+  bottom: 2%;
+  width: 20%;
+  z-index: 20;
 }
 
 .sns {
-    position: absolute;
-    z-index: 20;
+  position: absolute;
+  z-index: 20;
 }
 
 .instagram {
-    right: 13.9%;
-    bottom: 2%;
-    width: 2.8%;
+  right: 13.9%;
+  bottom: 2%;
+  width: 2.8%;
 }
 
 .X {
-    right: 8.8%;
-    bottom: 2%;
-    width: 2.8%;
+  right: 8.8%;
+  bottom: 2%;
+  width: 2.8%;
 }
 .youtube {
-    right: 2.9%;
-    bottom: 2.1%;
-    width: 3.5%;
+  right: 2.9%;
+  bottom: 2.1%;
+  width: 3.5%;
 }
 
 .sns:hover {
-    opacity: 0.7; 
-    transition: opacity 0.3s ease; 
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
 }
 
 .youtube-video {
-    position: absolute;
-    width: 35%;
-    top: 80%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    aspect-ratio: 16 / 9;
-    z-index: 20;
+  position: absolute;
+  width: 35%;
+  top: 80%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 16 / 9;
+  z-index: 20;
 }
 
-
 #movie {
-    position: absolute;
-    top: 78.5%;
-    left: 27%;
-    width: 12%;
-    z-index: 30;
+  position: absolute;
+  top: 78.5%;
+  left: 27%;
+  width: 12%;
+  z-index: 30;
 }
 
 #balloon2 {
-    position: absolute;
-    transform: translate(-50%, -40%);
-    top: 78.5%;
-    left: 22%;
-    width: 5%;
-    z-index: 30;
+  position: absolute;
+  transform: translate(-50%, -40%);
+  top: 78.5%;
+  left: 22%;
+  width: 5%;
+  z-index: 30;
 }
 
 @media screen and (max-width: 700px) {
-    .close-button {
-        top: -45px;
-        right: 10px;
-    }
+  .close-button {
+    top: -45px;
+    right: 10px;
+  }
 
-    .pc {
-        display: none;
-    }
+  .pc {
+    display: none;
+  }
 
-    .sp {
-        display: block;
-    }
+  .sp {
+    display: block;
+  }
 
-    #Title-image {
-        width: 64%;
-        top: 29%;
+  #Title-image {
+    width: 64%;
+    top: 29%;
+  }
 
-    }
+  #concept {
+    width: 40%;
+    left: 48%;
+    top: 4%;
+  }
 
-    #concept {
-        width: 40%;
-        left: 48%;
-        top: 4%;
-    }
+  #balloon {
+    left: 20%;
+    top: 50%;
+    width: 8%;
+  }
 
-    #balloon {
-        left: 20%;
-        top: 50%;
-        width: 8%;
-    }
+  #teaser {
+    left: 54%;
+    top: 50%;
+    width: 55%;
+  }
 
-    #teaser {
-        left: 54%;
-        top: 50%;
-        width: 55%;
-    }
+  #movie {
+    top: 66.7%;
+    left: 39.9%;
+    width: 20%;
+  }
 
-    #movie {
-        top: 66.7%;
-        left: 39.9%;
-        width: 20%;
-    }
+  #balloon2 {
+    top: 67%;
+    left: 35%;
+    width: 6%;
+  }
 
-    #balloon2 {
-        top: 67%;
-        left: 35%;
-        width: 6%;
-    }
+  .youtube-video {
+    top: 75%;
+    left: 50%;
+    width: 80%;
+  }
 
-    .youtube-video {
-        top: 75%;
-        left: 50%;
-        width: 80%;
-    }
+  #coming {
+    top: 96%;
+    right: 68%;
+    width: 30%;
+  }
 
-    #coming {
-        top: 96%;
-        right: 68%;
-        width: 30%;
-    }
+  .instagram {
+    position: absolute;
+    bottom: 3%;
+    right: 22%;
+    width: 5%;
+  }
 
-    .instagram {
-        position: absolute;
-        bottom: 3%;
-        right: 22%;
-        width: 5%;
-    }
+  .X {
+    position: absolute;
+    bottom: 3%;
+    right: 12.9%;
+    width: 5%;
+  }
 
-    .X {
-        position: absolute;
-        bottom: 3%;
-        right: 12.9%;
-        width: 5%;
-    }
+  .youtube {
+    position: absolute;
+    bottom: 3.1%;
+    right: 3%;
+    width: 6%;
+  }
 
-    .youtube {
-        position: absolute;
-        bottom: 3.1%;
-        right: 3%;
-        width: 6%;
-    }
-
-        #name-image {
-        left: 82%;
-        bottom: 1.5%;
-        width: 30%;
-    }
-
+  #name-image {
+    left: 82%;
+    bottom: 1.5%;
+    width: 30%;
+  }
 }
-
-
