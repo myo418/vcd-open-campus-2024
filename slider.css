@@ -1,0 +1,127 @@
+.exhibitionSelectorContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.exhibitionSelectorContainerInside {
+  position: relative;
+  /* max-width: 1000px; */
+  overflow: hidden;
+}
+
+.exhibitionSelectorContainerInsideLeft {
+  width: 50px; /* フェードアウトの幅 */
+  position: absolute;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(
+    to right,
+    rgba(0, 158, 189, 1),
+    rgba(0, 158, 189, 0)
+  );
+}
+
+.exhibitionSelectorContainerInsideRight {
+  width: 50px; /* フェードアウトの幅 */
+  position: absolute;
+  right: 0;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(
+    to right,
+    rgba(0, 158, 189, 0),
+    rgba(0, 158, 189, 1)
+  );
+}
+
+.exhibitionSelectorSlider {
+  animation: slide 30s linear infinite;
+  animation-delay: -20s;
+  /* transform: translateX(calc(-200px * 6 - 21px * 6 - 50px)); */
+  justify-content: center;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+.exhibitionSelectorSlider:hover {
+  animation-play-state: paused;
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-200px * 6 - 21px * 6 - 50px)
+    ); /* 10個のアイテム + マージンを含む全体の幅 */
+  }
+}
+
+
+.exhibitionLink {
+  height: 250px;
+  width: 200px;
+  display: inline-flex;
+  vertical-align: top;
+  flex-direction: column;
+  justify-content: end;
+  transform: skew(-15deg);
+  margin-right: 15px;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 6px 3px 3px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.exhibitionLinkBackground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 250px;
+  object-fit: cover;
+  transform: translate(-50%, -50%) skew(15deg);
+}
+
+.exhibitionLinkShade {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  width: 200%;
+  height: 100%;
+}
+
+.exhibitionLinkText {
+  width: 100%;
+  color: white;
+  transform: skew(15deg); /* 内部のテキストを元に戻すため */
+  text-align: center;
+}
+
+.exhibitionLinkClassName {
+  font-size: 16px;
+  color: var(--color-text-pale);
+}
+
+.exhibitionLinkClassNameSmall {
+  font-size: 14px;
+  color: var(--color-text-pale);
+}
+
+.exhibitionLinkTitle {
+  font-size: 20px;
+}
+
+.exhibitionLinkSmallTitle {
+  font-size: 18px;
+}
+
+.exhibitionSpace {
+  width: 50px;
+  height: 10px;
+  display: inline-flex;
+}
