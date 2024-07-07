@@ -70,6 +70,7 @@
   border-radius: 30px;
   background-color: white;
   margin-bottom: 30px;
+  min-height: 300px;
 }
 
 .exhibitionImageContainer {
