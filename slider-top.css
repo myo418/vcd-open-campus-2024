@@ -6,9 +6,10 @@
 }
 
 .exhibitionSelectorContainerInside {
-  position: relative;
-  /* max-width: 1000px; */
-  overflow: hidden;
+    position: relative;
+    /* max-width: 1000px; */
+    overflow: hidden;
+
 }
 
 .exhibitionSelectorContainerInsideLeft {
@@ -62,23 +63,27 @@
   }
 }
 
+.exhibitionLink:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
 
 .exhibitionLink {
-  height: 450px;
-  width: 350px;
-  display: inline-flex;
-  vertical-align: top;
-  flex-direction: column;
-  justify-content: end;
-  transform: skew(-15deg);
-  margin-right: 20px;
-  margin-bottom: 5px;
-  padding: 5px;
-  border-radius: 15px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 6px 3px 3px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
+    height: 450px;
+    width: 350px;
+    display: inline-flex;
+    vertical-align: top;
+    flex-direction: column;
+    justify-content: end;
+    transform: skew(-15deg);
+    margin-right: 20px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 8px 4px 3px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
 }
 
 .exhibitionLinkBackground {

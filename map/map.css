@@ -6,7 +6,9 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    overflow-x: hidden; /* ????????? */
 }
+
 .iframe-container {
     position: relative;
     width: 100%;
@@ -21,10 +23,6 @@ body {
     width: 100%;
     height: 100%;
     border: 0;
-}
-
-p {
-    line-height: 0.5;
 }
 
 @keyframes fadeOut {
@@ -44,6 +42,10 @@ p {
 #wrapper {
     width: 100%;
     position: relative;
+}
+
+.description {
+    width: 40%;
 }
 
 .main-visual {
@@ -71,10 +73,10 @@ p {
     }
 }
 
-/* ?????????????? */
 .fade-in {
     animation: fadeIn 2s ease-in-out forwards;
 }
+
 #wind1 {
     position: absolute;
     width: 100%;
@@ -84,15 +86,16 @@ p {
 
 #wind2 {
     position: absolute;
-    width: 120%;
+    width: 100%;
     z-index: -10;
-    bottom: 14%;
+    bottom: 18%;
+    overflow-x: hidden;
 }
 
 #map-tx {
     width: 40%;
     margin-bottom: 1%;
-    padding-top:4%;
+    padding-top: 4%;
 }
 
 #map-all {
@@ -104,27 +107,29 @@ p {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 5%;
 }
+
 .textList {
     transform: translate(0%, 50%);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-direction: column;
-    align-items: flex-start; /* ?????? */
+    align-items: flex-start;
     height: 100%;
     max-height: 300px;
     padding-top: 6%;
     margin-left: 5%;
     width: 30%;
-
 }
+
 .textContainer {
-    display: flex; /* ?????? */
+    display: flex;
     justify-content: center;
-    align-items: flex-start; /* ???????? */
+    align-items: flex-start;
     padding-top: 2%;
 }
+
 .room {
     font-size: 24px;
     font-family: "futura-pt", sans-serif;
@@ -159,12 +164,13 @@ p2 {
 #name-image {
     width: 20%;
     z-index: 20;
-    margin-bottom: 2%;
+    margin-top: 5%;
 }
 
 .sns {
     z-index: 20;
-    margin-top: -2%;
+    margin: 0.6%;
+    margin-top: -1.6%;
 }
 
 .instagram {
@@ -179,131 +185,146 @@ p2 {
     width: 3.5%;
 }
 
-.sns:hover {
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-}
+    .instagram:hover,
+    .X:hover,
+    .youtube:hover {
+        opacity: 0.7;
+        transition: opacity 0.3s ease;
+    }
 
+    @media screen and (max-width: 1380px) {
+        .close-button {
+            top: -45px;
+            right: 10px;
+        }
 
+        .pc {
+            display: none;
+        }
 
+        .sp {
+            display: block;
+        }
 
+        p {
+            font-size: 14px;
+        }
 
+        .textList {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100%;
+            max-height: 300px;
+            padding-top: 0%;
+            margin: 0 auto;
+            width: 70%;
+            transform: translate(0%, 0%);
+            margin-bottom: 20%;
+        }
+
+        .textContainer {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-top: 0%;
+        }
+
+        .text {
+            font-size: 24px;
+        }
+
+        .room {
+            font-size: 24px;
+            margin-left: 0%;
+        }
+
+        #map-title {
+            width: 60%;
+        }
+
+        #map-tx {
+            width: 70%;
+        }
+
+        #map-all {
+            width: 70%;
+            margin: 20%;
+            transform: translate(0%, 0%);
+        }
+
+        .maps {
+            display: block;
+            margin-bottom: 10%;
+        }
+
+        h3 {
+            margin-top: 0%;
+            margin-bottom: 0%;
+            font-size: 20px;
+            font-family: "source-han-sans-cjk-ja", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            color: rgb(0, 158, 189);
+        }
+
+        p2 {
+            text-indent: 1em;
+            font-family: "a-otf-ud-shin-go-pr6n", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            color: rgb(0, 158, 189);
+        }
+
+        .instagram {
+            position: absolute;
+            bottom: 0.3%;
+            right: 22%;
+            width: 7%;
+        }
+
+        .X {
+            position: absolute;
+            bottom: 0.3%;
+            right: 12.9%;
+            width: 7%;
+        }
+
+        .youtube {
+            position: absolute;
+            bottom: 0.3%;
+            right: 3%;
+            width: 8%;
+            transform: translate(0%, -10%);
+        }
+
+        #name-image {
+            left: 82%;
+            margin-top: 5%;
+            width: 30%;
+            margin-bottom: 1%;
+        }
+
+        .description {
+            width: 80%;
+        }
+    }
 @media screen and (max-width: 700px) {
-    .close-button {
-        top: -45px;
-        right: 10px;
-    }
-
-    .pc {
-        display: none;
-    }
-
-    .sp {
-        display: block;
-    }
-
-
-
-
-
-    p {
-        font-size: 14px;
-    }
-
-
-    .textList {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; /* ???????? */
-        align-items: center; /* ???????? */
-        height: 100%;
-        max-height: 300px;
-        padding-top: 0%;
-        margin: 0 auto; /* ????????? */
-        width: 70%; /* ????????? */
-        transform: translate(0%, 0%);
-        margin-bottom: 20%;
-    }
-
-    .textContainer {
-        display: flex; /* ???????????? */
-        justify-content: center; /* ???????? */
-        align-items: flex-start; /* ??????? */
-        padding-top: 0%;
+    .room {
+        font-size: 15px;
     }
 
     .text {
         font-size: 15px;
     }
-
+}
+@media screen and (max-width: 440px) {
     .room {
-        font-size: 15px;
-        margin-left: 0%;
+        font-size: 12px;
     }
 
-    #map-title {
-        width: 60%;
+    .text {
+        font-size: 12px;
     }
-
-    #map-tx {
-        width: 70%;
-    }
-
-    #map-all {
-        width: 70%;
-        margin: 20%;
-        transform: translate(0%, 0%);
-    }
-
-    .maps {
-        display: block;
-        margin-bottom: 10%;
-    }
-
-    h3 {
-        margin-top: 0%;
-        margin-bottom: 0%;
-        font-size: 20px;
-        font-family: "source-han-sans-cjk-ja", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        color: rgb(0, 158, 189);
-    }
-
-    p2 {
-        text-indent: 1em;
-        font-family: "a-otf-ud-shin-go-pr6n", sans-serif;
-        font-weight: 300;
-        font-style: normal;
-        color: rgb(0, 158, 189);
-    }
-
-
-    .instagram {
-        position: absolute;
-        bottom: 0.3%;
-        right: 22%;
-        width: 7%;
-    }
-
-    .X {
-        position: absolute;
-        bottom: 0.3%;
-        right: 12.9%;
-        width: 7%;
-    }
-
-    .youtube {
-        position: absolute;
-        bottom: 0.3%;
-        right: 3%;
-        width: 8%;
-        transform: translate(0%, -10%);
-    }
-
-    #name-image {
-        left: 82%;
-        margin-top: 5%;
-        width: 30%;
-        margin-bottom: 1%;
-    }
+}
