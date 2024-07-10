@@ -25,9 +25,7 @@ body {
     border: 0;
 }
 
-p {
-    line-height: 0.5;
-}
+
 
 @keyframes fadeOut {
     from {
@@ -77,6 +75,9 @@ p {
 .fade-in {
     animation: fadeIn 2s ease-in-out forwards;
 }
+.description {
+    width: 40%;
+}
 #wind1{
     position:absolute;
     width:100%;
@@ -86,7 +87,7 @@ p {
 
 #wind2 {
     position: absolute;
-    width: 120%;
+    width: 100%;
     z-index: -10;
     bottom: 12%;
 }
@@ -280,6 +281,9 @@ p2 {
         margin-top: 50%;
         width: 30%;
         margin-bottom:1%;
+    }
+    .description {
+        width: 80%;
     }
 
 
